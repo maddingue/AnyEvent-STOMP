@@ -23,4 +23,4 @@ requires:
   Object::Event: 1.21
   Test::More: 0
   common::sense: 1
-version: 0.7
+version: 0.8
