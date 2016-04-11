@@ -206,7 +206,7 @@ sub send_frame {
 
     my $tmp = $headers->{'content-length'};
     if (!defined $tmp) {
-        $headers->{'content-length'} = length $body;
+        $headers->{'content-length'} = length($body) || 0;
     } elsif ($tmp eq '') {
         delete $headers->{'content-length'};
     }

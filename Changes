@@ -1,5 +1,6 @@
 Revision history for AnyEvent-STOMP:
 
+- Fix CPAN-RT #68432: invalid content-length set for undefined bodies
 - Fix CPAN-RT #68433: messages after the first one fail to be received
 - Fix CPAN-RT #105689: destroy will not send the disconnect event
 
