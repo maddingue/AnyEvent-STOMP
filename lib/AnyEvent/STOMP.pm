@@ -278,7 +278,7 @@ sub _receive_frame {
     $self->{handle}->unshift_read(regex => qr/\n*([^\n].*?)\n\n/s,
                                   sub {
             my $raw_headers = $_[1];
-            if ($raw_headers =~ s/^(.+)\n//) {
+            if ($raw_headers =~ s/^\n*(.+)\n//) {
                 $command = $1;
             }
             foreach my $line (split(/\n/, $raw_headers)) {
