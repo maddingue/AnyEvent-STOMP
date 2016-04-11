@@ -340,7 +340,7 @@ Attempting to let the object fall out-of scope is not sufficient.
 
 sub destroy {
 	my ($self) = shift;
-    $self->send_frame('DISCONNECT') if defined undef $self->{handle};
+    $self->send_frame('DISCONNECT') if defined $self->{handle};
 	undef $self->{handle};
 }
 

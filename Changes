@@ -1,6 +1,7 @@
 Revision history for AnyEvent-STOMP:
 
 - Fix CPAN-RT #68433: messages after the first one fail to be received
+- Fix CPAN-RT #105689: destroy will not send the disconnect event
 
 0.7     Mon Jan 13 09:56:22 EST 2014
         - Ownership taken over by Fulko Hew.
